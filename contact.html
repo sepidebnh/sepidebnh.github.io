@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Page</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Sepide">
+        <meta name="description" content="Contact Page of my Little Store">
+        <meta name="keywords" content="HTML, CSS, Contact, Contact form">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+        <link rel="stylesheet" href="styles/style.css" type="text/css">
+        <link href="images/favicon.ico" type="image/x-icon" rel="icon">
+        <style>
+        body {
+
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+     </head>
+    <body>
+        <!-- header part of home page-->
+        <header>
+            <!-- main nav bar -->
+            <nav>
+                <ul type="disc">
+                    <li><a href="index.html">Home</a></li>&nbsp;
+                    <li><a href="dream.html">Dream</a></li>&nbsp;
+                    <li><a href="#">Contact</a></li>&nbsp;
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <form>
+                    <fieldset>
+                        <legend>Personal Info:</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" id="fName" placeholder="Enter your First Name" autofocus><br>
+                        <label for="lName">Last Name:</label>
+                        <input type="text" id="lName" placeholder="Enter your Last Name"><br>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email address"><br>
+                        <label for="attach">Please attach your Resume:</label>
+                        <input type="file" id="attach"><br>
+                        <label for="color">Please choose your favorite color:</label>
+                        <input type="color" id="color" value="#0000ff">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Favorite Data:</legend>
+                        <p>Choose your Favorite Browser:</p>
+                        <input type="checkbox" id="Edge" value="Microsoft Edge" name="browsers" checked>
+                        <label for="Edge">Microsoft Edge</label><br>
+                        <input type="checkbox" id="Firefox" name="browsers" Value="Mozilla Firefox">
+                        <label for="Firefox">Mozilla Firefox</label><br>
+                        <input type="checkbox" id="chrome" name="browsers" value="Google Chrome">
+                        <label for="chrome">Google Chrome</label><br>
+                        <p>Select the method of your commute:</p>
+                        <input type="radio" id="vehicle1" value="Car" name="vehicle" checked>
+                        <label for="vehicle1">Car</label><br>
+                        <input type="radio" id="vehicle2" value="Train" name="vehicle" disabled>
+                        <label for="vehcile2">Train</label><br>
+                        <input type="radio" id="vehicle3" value="Bike" name="vehicle">
+                        <label for="vehicle3">Bike</label><br><br>
+                    </fieldset>
+                   
+                    <label for="cars">Choose your car:</label>
+                    <select name="cars2" id="cars">
+                        <option value="Toyota">Toyota</option>
+                        <option value="Fiat">Fiat</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Nissan">Nissan</option>
+                    </select><br><br>
+                    <label for="browsers">Browsers:</label>
+                    <input list="browser" id="browsers">
+                    <datalist id="browser">
+                        <option value="Microsoft Edge">
+                        <option value="Mozilla Firefox">
+                        <option value="Google Chrome">
+                        <option value="Safari">
+                    </datalist><br><br>
+                    <label for="txtarea">Please provide your comments here:</label><br><br>
+                    <textarea name="" id="" cols="30" rows="10">Feedback please!</textarea><br>
+                    <input type="submit" value="Submit" onclick="alert('Thank you for submitting this form')">
+
+                </form>
+
+
+            </section>
+            <section id="bck">
+
+
+
+            </section>
+
+            <section id="gradient">
+
+
+
+            </section>
+
+            <section id="float">
+                <img src="images/sky.jpg" alt="sky picture" width="80" height="80">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam distinctio enim omnis earum aspernatur est mollitia veritatis nihil deleniti commodi eaque, quis voluptates ut dolore culpa id porro voluptas sed.</p>
+
+
+            </section>
+            <section id="list">
+
+                <ul>
+                    <li><a href="#">Property</a></li>
+                    <li><a href="#">Customes</a></li>
+                    <li><a href="">Special Effects</a></li>
+                    <li><a href="">Masks</a></li>
+                </ul>
+            </section>
+
+
+
+
+        </main>
+        <!-- footer area of Home page-->
+        <footer lang="ja">
+            <p>Author: Sepideh</p>
+            <p>&copy;&nbsp;Copyright reserved 2023</p>
+            <!-- <a href="about.html">About</a> -->
+        </footer> 
+    
+    </body>
+</html>

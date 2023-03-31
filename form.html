@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Sepideh">
+        <meta name="description" content="Home page of this little store webiste">
+        <meta name="keywords" content="HTML, Web Design, CSS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,700&family=Roboto+Mono:wght@100;300;400;500&display=swap" rel="stylesheet">       
+         <link href="images/favicon.ico" type="image/x-icon" rel="icon">
+         <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+        <link rel="stylesheet" href="styles/style.css" type="text/css">
+        
+       
+       
+       
+    </head>
+    <body>
+        <!-- header part of home page-->
+        <header>
+            <img src="images/sky.jpg" alt="website logo" width="70" height="70">
+            <!-- main nav bar -->
+            <nav>
+                <ul type="disc">
+                    <li><a href="#">Home</a></li>&nbsp;
+                    <li><a href="dream.html">Dream</a></li>&nbsp;
+                    <li><a href="contact.html">Contact</a></li>&nbsp;
+                </ul>
+            </nav>
+        </header>
+        <!-- main section of Home page-->
+        <main>
+            <form action="">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" required><br><br>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" required><br><br>
+                <label for="markOne">Mark 1</label>
+                <input type="number" id="markOne" required><br><br>
+                <label for="markTwo">Mark 2:</label>
+                <input type="number" id="markTwo" required><br><br>
+                <button type="button" onclick="validateTxt()">Validate Text</button>
+                <button type="button" onclick="printResult()">Print Result</button>
+            </form>
+            <p id=""></p>
+            <span id="result"></span>
+           
+            
+        </main> 
+        <footer>
+            <p>Author: @copy; Sepide</p>
+        </footer>
+       
+        </footer> 
+        <script src="test.js" defer></script>
+    </body>
+</html>
