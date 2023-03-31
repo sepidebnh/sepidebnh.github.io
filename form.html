@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Sepideh">
+        <meta name="description" content="Home page of this little store website">
+        <meta name="keywords" content="HTML, Web Design, CSS">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;500&family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">        <link href="images/favicon.ico" type="image/x-icon" rel="icon">
+        <link rel="stylesheet" href="style.css" type="text/css">
+       <script src="test.js" defer></script>
+
+    </head>
+    <body>
+        <!-- header part of home page-->
+        <header>
+            <!-- website logo-->
+            <img src="images/laptop.jpg" alt="logo of the website" width="80" height="80">
+            <!-- main nav bar -->
+            <nav>
+                <ul type="disc">
+                    <li><a href="#">Home</a></li>&nbsp;
+                    <li><a href="dream.html">Dream</a></li>&nbsp;
+                    <li><a href="contact.html">Contact</a></li>&nbsp;
+                </ul>
+            </nav>
+        </header>
+        <!-- main section of Home page-->
+        <main>
+            
+            <section>
+                <form action="">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" required><br><br>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" required><br><br>
+                    <label for="markOne">Mark 1</label>
+                    <input type="number" id="markOne" required><br><br>
+                    <label for="markTwo">Mark 2:</label>
+                    <input type="number" id="markTwo" required><br><br>
+                    <button type="button" onclick="validateForm()">Validate Form</button>
+                    <button type="button" onclick="printResult()">Display Result</button>
+
+                </form>
+                <span id="error" style="border: 2px solid blue;width: 4000px;"></span>
+                <p id="result"></p>
+
+
+            </section>
+            <!-- comment -->
+            <div style="height:300px;border:2px solid black;"></div>
+            <section>
+
+                <form>
+                    <label for="fName">First Name:</label>
+                    <input type="text" id="fName"><br>
+                    <label for="lName">Last Name:</label>
+                    <input type="text" id="lName"><br>
+                    <label for="pNumber">Phone Number:</label>
+                    <input type="tel" id="pNumber"><br>
+                    <label for="p1">Product 1:</label>
+                    <input type="number" id="p1"><br>
+                    <label for="p2">Product 2:</label>
+                    <input type="number" id="p2"><br>
+                    <label for="p3">Product 3:</label>
+                    <input type="number" id="p3"><br>
+                    <button type="button" onclick="calculateAmount()">Calculate</button>
+                </form>
+                <span id="error1"></span>
+                <span id="result1"></span>
+                <span id="resultTax"></span>
+            </section>
+        
+        <footer>
+            <p>Author: Sepideh</p>
+            <p>&copy;&nbsp;Copyright reserved 2023</p>
+            <!-- <a href="about.html">About</a> -->
+        </footer> 
+        
+
+
+        
+       
+    </body>
+</html>
