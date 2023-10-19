@@ -1,0 +1,152 @@
+header {
+
+    height: 160px;
+    background-color: lightcyan;
+    border-bottom: 2px solid black;
+}
+
+header img {
+
+    border-radius: 50%;
+    margin: 10px;
+    float: left;
+}
+
+nav ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+    
+}
+
+nav ul li {
+
+    float: left;
+}
+
+nav ul li a, .dropbtn {
+
+    display: inline-block;
+    padding: 8px 10px;
+    color: darkmagenta;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover, .dropdown:hover .dropbtn {
+
+    background-color: lightskyblue;
+}
+
+li.dropdown {
+
+    display: inline-block;
+
+}
+
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    box-shadow: 1px 0px 0px 1px red;
+    background-color: lightgray;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+
+    display: block;
+    padding: 8px 10px;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+
+    background-color: lightsalmon;
+}
+
+.dropdown:hover .dropdown-content {
+
+    display: block;
+}
+
+/* div container on about page with flex layout */
+
+div#flex-container {
+
+    display: flex;
+    flex-direction: row
+}
+
+#flex-container > div {
+   background-color: dodgerblue;
+   width: 100px;
+   height: 100px;
+   margin: 10px;
+   text-align: center;
+   font-size: 30x;
+}
+
+#flex-container div:first-child {
+
+  order: 3;
+   background-color: red;
+}
+
+#flex-container div:nth-child(2) {
+
+    order: 1;
+}
+
+
+#flex-container div:nth-child(3)  {
+
+    order: 4;
+}
+
+#flex-container div:last-child  {
+
+    order: 2;
+    flex: 0 2 100px;
+    align-self: flex-start;
+}
+
+div#sticky {
+
+    width: 900px;
+    height: 90px;
+    border: 2px solid blue;
+    background-color: lightpink;
+    position: sticky;
+    top: 0;
+}
+
+/* style for grid container */
+
+section#grid-container {
+
+    display: grid;
+    padding: 10px;
+    background-color: lightgrey;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.grid {
+
+    border: 2px solid blue;
+    padding: 5px;
+    background-color: lightpink;
+    font-size: 19px;
+    text-align: center;
+}
+
+
+
+
