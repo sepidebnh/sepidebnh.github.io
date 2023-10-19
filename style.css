@@ -1,3 +1,10 @@
+/* font-face rule */
+@font-face {
+    font-family: myFont;
+    src: url("fonts/") format("truetype");
+}
+
+/* header style */
 header {
 
     height: 160px;
@@ -5,12 +12,16 @@ header {
     border-bottom: 2px solid black;
 }
 
+/* style of website logo */
+
 header img {
 
     border-radius: 50%;
     margin: 10px;
     float: left;
 }
+
+/* main navigation menu bar style */
 
 nav ul {
 
@@ -76,76 +87,39 @@ li.dropdown {
     display: block;
 }
 
-/* div container on about page with flex layout */
-
-div#flex-container {
-
-    display: flex;
-    flex-direction: row
-}
-
-#flex-container > div {
-   background-color: dodgerblue;
-   width: 100px;
-   height: 100px;
-   margin: 10px;
-   text-align: center;
-   font-size: 30x;
-}
-
-#flex-container div:first-child {
-
-  order: 3;
-   background-color: red;
-}
-
-#flex-container div:nth-child(2) {
-
-    order: 1;
-}
-
-
-#flex-container div:nth-child(3)  {
-
-    order: 4;
-}
-
-#flex-container div:last-child  {
-
-    order: 2;
-    flex: 0 2 100px;
-    align-self: flex-start;
-}
-
-div#sticky {
-
-    width: 900px;
-    height: 90px;
-    border: 2px solid blue;
-    background-color: lightpink;
-    position: sticky;
-    top: 0;
-}
-
 /* style for grid container */
 
 section#grid-container {
 
-    display: grid;
-    padding: 10px;
-    background-color: lightgrey;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
+     display: grid;
+     background-color: lightgray;
+     grid-template-areas: 'myArea myArea myArea ...';
+     align-content: end;
+     padding: 10px;
+     margin: 30px;
+     column-gap: 0px;
+
+
 }
 
 .grid {
-
+    background-color: lightsalmon;
     border: 2px solid blue;
     padding: 5px;
-    background-color: lightpink;
-    font-size: 19px;
+    font-size: 20px;
     text-align: center;
 }
+
+.item-1 {
+
+    grid-column: 1 / 3;
+}
+
+.item-3 {
+
+   grid-area: myArea;
+}
+
 
 
 
