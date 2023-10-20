@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Page</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Sepideh">
+        <meta name="keywords" content="HTML, CSS, Contact, Address">
+        <meta name="description" content="Contact page of my little store website">
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <javascript>
+
+
+        </javascript>
+
+        <style>
+
+            footer p {
+
+                font-size: 12px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header id="top">
+            <h1 title="heading-one" style="font-size:20px;margin:10px;">Welcome to my website</h1>
+            <img src="images/logo.jpg" alt="website logo" width="100" height="100">
+           
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">News</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link-1</a>
+                        <a href="#">Link-2</a>
+                        <a href="#">Link-3</a>
+                        <a href="#">Link-4</a>
+                    </div>
+                </li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <h2>Contact Page</h2>
+        <form action="action_page.php" method="post">
+            <fieldset>
+                <legend>Personal Info:</legend>
+                <label for="fname">First Name:</label>
+                    <input type="text" id="fname" placeholder="First Name" name="firstName" pattern="[A-Za-z]{30}" required><br><br>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" placeholder="Last Name" name="lastName" required autofocus><br><br>          
+            </fieldset>
+           <input type="radio" name="browser" value="Google Chrome" id="gChrome">
+           <label for="gChrome">Google Chrome</label><br>
+           <input type="radio" name="browser" value="Firefox Mozilla" id="fMozilla">
+           <label for="fMozilla">Firefox Mozilla</label><br>
+           <input type="radio" name="browser" value="Safari" id="sfari">
+           <label for="sfari">Safari</label><br><br><br>
+           <input type="checkbox" name="fav_language" value="HTML" id="html">
+           <label for="html">HTML</label><br>
+           <input type="checkbox" name="fav_language" value="CSS" id="css">
+           <label for="css">CSS</label><br>
+           <input type="checkbox" name="fav_language" value="JavaScript" id="js">
+           <label for="js">JavaScript</label><br><br><br>
+           <label for="method">Method of Contact</label>
+           <select name="methods" id="method">
+            <option value="Phone">Phone:</option>
+            <option value="Email" selected>Email</option>
+            <option value="Mail">Mail</option>
+            <option value="Fax">Fax</option>
+           </select><br><br>
+           <label for="email">Email:</label>
+           <input type="email" id="email" name="em" placeholder="Your Email" required><br>
+           <label for="tel">Phone Number</label>
+           <input type="tel" id="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" disabled><br><br><br>
+           <label for="cars">Cars</label>
+           <input list="car">
+           <datalist id="car">
+            <option value="Fiat">Fiat</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Jeep">Jeep</option>
+           </datalist><br><br>
+           <label for="feedback">Provide your Feedback</label>
+           <textarea name="fback" id="feedback" cols="10" rows="5">Your Feedback Here!</textarea><br><br>
+           <input type="submit" value="Submit">
+
+        </form>
+        <section>
+            <div id="cont"></div>
+
+
+
+        </section>
+        
+
+
+        <footer>
+            <p>Copyright &copy;2023 was developed</p>
+            <p>Author: Sepideh</p> 
+            <!-- <p><a href="#top">Back To Top</a></p> -->
+        </footer> 
+    </body>
+
+</html>
