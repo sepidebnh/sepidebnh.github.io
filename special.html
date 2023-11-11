@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Halloween Store</title>
+	<meta charset="utf-8" />
+	<meta name="author" content="Sepideh">
+	<meta name="keywords" content="Halloween Store">
+	<meta name="description" content="Halloween Store Homepage">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/normalize.css" type="text/css">
+	<link rel="stylesheet" href="styles/category.css" type="text/css">
+	<link rel="icon" href="images/favicon.ico" type="image/icon">
+</head>
+<body>
+	<header>
+		<img src="images/pumpkin.gif" alt="Pumpkin logo">
+		<h1>The Halloween Store</h1>
+		<h3>For the little Goblin in all of us!</h3>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Product List</a></li>
+			<li><a href="#">Personal</a></li>
+			<li><a href="#">Decorating Ideas</a></li>
+			<li><a href="#">Join Email</a></li>
+		</ul>
+	</nav>
+	<main>
+		<aside>
+			<ul>
+				<li><a href="#">Props</a></li>
+				<li><a href="#">Costumes</a></li>
+				<li><a href="special.html">Special FX</a></li>
+				<li><a href="#">Masks</a></li>
+			</ul>
+		</aside>
+		<section>
+            <h2>Special effects</h2>
+            <a href="#">Black light</a>
+            <p>Create that creepy glow-in-the-dark effect with this powerful black light.</p>
+            <p><strong>Price:</strong>&nbsp;19.99</p>
+            <a href="#">Fog machine</a>
+            <p>The perfect fog machine for the home haunter.</p>
+            <p><strong>Price:</strong>&nbsp;34.99</p>
+            <a href="#">Fog juice (1 qt.)</a>
+            <p>Fill up your fog machine to create an eerie affect.</p>
+            <p><strong>Price:</strong>&nbsp;9.99</p>
+            <a href="#">Skull fogger</a>
+            <p>This fogger puts out a whopping 2,800 cubic feet of fog per minute. Comes with a 10-foot remote control.</p>
+            <p><strong>Price:</strong>&nbsp;39.95</p>
+            <a href="#">Black mini strobe light</a>
+            <p>Perfect for creating that spot flash effect. Includes mounting bracket.</p>
+            <p><strong>Price:</strong>&nbsp;13.99</p>
+            <a href="#">Thunder and lightening machine</a>
+            <p>Flash! Boom! Create your own realistic thunder and lightning effects!</p>
+            <p><strong>Price:</strong>&nbsp;99.99 </p>
+		</section>
+	</main>
+	<footer>
+		<script>
+			var day_description = "Halloween";
+			var day_before = "Halloween Eve";
+
+			var today = new Date();
+			var year = today.getYear();
+			if ((navigator.appName == "Microsoft Internet Explorer") && (year < 2000))
+			year="19" + year;
+			if (navigator.appName == "Netscape")
+			year=1900 + year;
+			var date = new Date("October 31, " + year);
+			var diff = date.getTime() - today.getTime();
+			var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+			document.write("<center><p>")
+
+			if (days > 1)
+			document.write("There are " + (days+1) + " days until " + day_description + "!");
+			else if (days == 1)
+			document.write("Tommorrow is " + day_before  + "!");
+			else if (days == 0)
+			document.write("Today is " + day_before + "!");
+			else if (days == -1)
+			document.write("It's " + day_description + "!");
+			else if (days < -1)
+			document.write(day_description + " was " + ((days+1)*-1) + (days < -2 ? " days" : " day") + " ago!");
+			document.write("</p></center>");
+
+
+		</script>
+	</footer>
+</body>
+</html>
