@@ -1,0 +1,63 @@
+/* html style */
+html {
+
+    font-family: sans-serif;
+}
+
+/* body style */
+body {
+
+    padding: 5px;
+}
+/* heading lebel three in main */
+main h3::first-letter {
+
+    font-size: 40px;
+    /* color: red; */
+}
+/* header style */
+
+header img {
+
+    float: left;
+    margin-right: 30px;
+    width: 80px;
+    height: 80px;
+}
+
+header h1 {
+
+    color: orange;
+    font-style: italic;
+    text-shadow: 4px 4px 2px black;
+}
+
+/* list style */
+ul li {
+
+    margin: 4px;
+}
+
+ul li a {
+
+    font-weight: bold;
+    color: orange;
+}
+
+ul li a:visited  {
+
+    color: orange;
+}
+
+ul li a:hover {
+
+    color: green;
+}
+
+/* footer style */
+
+footer p {
+
+    font-size: 15px;
+    text-align: center;
+}
