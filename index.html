@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Speideh">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="descriptions" content="Homepage of my little Store Website">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <style>
+            #container {
+                width: 400px;
+                height: 400px;
+                background-color: lightgreen;
+                position: relative;
+            }
+            #animated {
+                width: 50px;
+                height: 50px;
+                background-color: darkgreen;
+                position: absolute;
+                left: 350px;
+                top: 350px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Animation with JavaScript</h2>
+        <section id="container">
+            <div id="animated"></div>
+        </section>
+        <button type="button" onclick="myMove()">Animation starts here!</button>
+        <script src="script.js" defer></script>
+        
+    </body>
+</html>
