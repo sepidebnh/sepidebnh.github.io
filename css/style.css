@@ -1,0 +1,240 @@
+/* font face rule */
+@font-face {
+    font-family: myFont;
+    src: url("/fonts/AlexBrush-Regular.ttf") format("truetype");
+}
+
+/* html style */
+html {
+
+    /* background-color: yellow; */
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+} 
+
+/* body style */
+
+body {
+
+    background-color: white;
+    width: 600px;
+    border: 2px solid black;
+    margin: 0px auto; 
+}
+
+/* header style */
+
+header {
+
+    height: 120px;
+    border-bottom: 2px solid blue;
+    background-image: linear-gradient(to right, white, yellow, pink, red, black);
+    
+}
+
+header img {
+
+    width: 80px;
+    height: 80px;
+    float: left;
+    border-radius: 50px;
+}
+
+header h1 {
+
+    margin-left: 100px;
+    text-shadow: 12px 10px 12px green;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+header h1::first-letter {
+
+    font-size: 55px;
+    color: red;
+}
+
+/* navigation menu bar */
+nav ul {
+
+    list-style-type: none;
+    background-color: lightcyan;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+
+    display: inline-block;
+    
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: blue;
+    display: inline-block;
+    padding: 12px 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+nav ul li a:link {
+
+
+    color: blue;
+    text-decoration: none;
+}
+
+nav ul li a:visited {
+
+    color: blueviolet;
+}
+
+nav ul li a:hover {
+
+    color: green;
+    text-decoration: underline;
+    background-color: aqua;
+}
+
+nav ul li a.active {
+
+    color: rgb(6, 29, 44);
+    font-size: 19px;
+    background-color: lightsalmon;
+    
+}
+
+/* p::first-line {
+
+    color: red;
+} */
+
+/* iframe style */
+
+iframe {
+
+    margin: 50px;
+    box-shadow: -12px -12px 30px 12px green;
+}
+
+/* table style */
+
+table, th, td {
+
+    border: 2px solid black;
+
+}
+
+table {
+
+    width: 300px;
+    margin: 2px auto;
+    border-collapse: collapse;
+}
+
+tr:hover {
+
+    background-color: yellow;;
+}
+
+td {
+
+    text-align: center;
+}
+caption {
+
+    color: red;
+    font-size: 23px;
+    font-style:italic;
+    font-weight: 400;
+}
+.para {
+
+    color: darkolivegreen;
+}
+
+input[type="text"]{
+
+    background-color: lightcyan;
+    border: 2px solid black;
+}
+input[type="submit"]{
+    background-color: orange;
+    color: black;
+    width: 120px;
+    border: 2px solid black;
+}
+aside img {
+
+    filter: drop-shadow(12px 10px 10px red);
+}
+
+
+/* main style */
+
+main, section, article {
+
+    padding: 12px;
+}
+
+main p {
+
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#first {
+
+    color: darkgrey;
+}
+/* footer style */
+
+footer {
+
+    border-top: 2px solid blue;
+
+}
+
+footer p {
+
+    text-align: center;
+    font-family: myFont;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 765px){
+
+    body {
+
+        background-color: lightcyan;
+        font-size: 0.5em;
+        border: none;
+
+    }
+
+    nav ul {
+
+        flex-direction: column;
+
+    }
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 976px){
+
+    html {
+
+        background-image: none;
+        background-color: white;
+    }
+}

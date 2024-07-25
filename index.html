@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Sepideh">
+        <meta name="keywords" content="HTML, CSS, Web Design">
+        <meta name="description" content="Homepage of my little Store Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+        <style>
+            aside {
+
+                margin: 12px;
+            }
+        </style>
+        <script>
+           
+            number1 = 12;
+            var number1; 
+            // here number1 is 12
+            var number1 = 25;
+            
+            {
+
+                var number1 = 34;
+                //here the number 34
+            }
+             
+            // document.write(number1);
+            //here number1 34
+            
+            // name = "John";
+            // let name;
+            //here the name is John
+            // let name = "Sarah";
+            {
+
+                let name = "Jane";
+                //here the name is Jane
+            }
+            // document.write(name);
+            //here the name is John
+            name = "Harper";
+            const cars = ["Toyota", "Fiat", "Volvo"];
+            // const cars = ["Saab", "Audi"];
+
+            window.alert("Hello JavaScript");
+            console.log("Test");
+
+
+        </script>
+        <script src="js/script.js" async></script>
+    </head>
+    <body>
+        <header id="top">
+            <img src="images/logo.jpg" alt="Website logo" width="80" height="80">
+            <h1>Welcome to my Website</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <p id="first">This is the first paragraph.</p>
+                <h2>Heading level 2</h2>
+                <img src="images/nature.jpg" id="demo3" alt="Nature in California" width="400" height="300" onmouseover="myFunction2()">     
+            </section>
+            <article>
+            </article>
+            <section>
+            <h3>Heading level 3</h3>
+            <ul>
+                <li>Web Programming</li>
+                <li>Operating System</li>
+                <li>Digital Design</li>
+            </ul>
+            </section>  
+            <article>
+                <h4>Heading Level 4</h4>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eius reprehenderit vero non sed, veniam quam soluta distinctio tenetur neque perferendis voluptatem officia inventore temporibus sapiente dolor libero eaque velit!</p>
+            </article>       
+             <h5>Heading Level 5</h5>
+            <ol type="i">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+            <a href="http://www.humber.ca" target="_blank">Humber</a>
+            <h6>Heading level 6</h6>
+            <p class="para">Lorem ipsum dolor sit amet consectetur <b>adipisicing elit</b>. Numquam distinctio cumque <i>maiores beatae</i> nihil esse labore tempora voluptatibus, <small>officiis</small>, doloribus adipisci. Impedit ab <mark>sequi perspiciatis</mark> explicabo deserunt voluptatum quo.</p>
+            <address>
+                1130 Yonge St.<br>
+                ON, CA
+            </address>
+            
+        </main>
+        <hr>
+        <aside>
+            <img src="images/background.jpg" alt="Sunset in somewhere" width="400" height="300">
+            <blockquote>
+                Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit</strong>. Veritatis obcaecati earum rerum sit fugit at <em>corporis eius</em> id quo temporibus. At voluptatum obcaecati nam aut sequi doloribus, quas consectetur quibusdam!
+            </blockquote>
+            <cite>The Poem Book</cite>
+            <q cite="http://www.wikipedia.org">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laudantium commodi, eum suscipit voluptates dolore aut non odio consequatur <ins>deleniti sint</ins>, soluta aspernatur cupiditate <del>pariatur velit</del> similique autem quam dolorum.</q>
+        </aside>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3" style="display:none">This is the pargraph with JavaScript!</p>
+        <button type="button" onclick="myFunction()">Click Here!</button>
+        <footer>
+            <p style="color:yellowgreen;">Author: Sepideh</p>
+            <p class="para">Copyright is reserved &copy; 2024 </p>
+            <p><a href="#top">Back to Top</a></p>
+        </footer>
+        <script>
+
+        document.getElementById("demo1").innerHTML = "Hello JavaScript!";
+
+        </script>
+        
+    </body>
+</html>

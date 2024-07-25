@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Sepideh">
+        <meta name="keywords" content="HTML, CSS, Web Design">
+        <meta name="description" content="Homepage of my little Store Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+        <style>
+            aside {
+
+                margin: 12px;
+            }
+        </style>
+        <script>
+
+
+
+
+        </script>
+    </head>
+    <body>
+        <header id="top">
+            <img src="images/logo.jpg" alt="Website logo" width="80" height="80">
+            <h1>Welcome to my Website</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <form action="subscribe.html">
+                    <label for="first">First Name:</label>
+                    <input type="text" id="first" name="first" required autofocus><br><br>
+                    <label for="user">Last Name:</label>
+                    <input type="text" id="user" name="zipcode" pattern="[0-9]{5}" placeholder="Provide Last Name"><br><br>
+                    <label for="browsers">Browsers:</label>
+                    <select name="browsers" id="browsers">
+                        <option value="Chrome">Google Chrome</option>
+                        <option value="Firefox" selected>Mozilla Firefox</option>
+                        <option value="Safari">Safari</option>
+                        <option value="IE">Internet Explorer</option>
+                    </select><br><br>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="other" name="gender">
+                    <label for="other">Other:</label><br><br>
+                    <input type="checkbox" id="car" name="commute" disabled>
+                    <label for="car">Car</label><br>
+                    <input type="checkbox" id="bike" name="commute">
+                    <label for="bike">Bike</label><br>
+                    <input type="checkbox" id="train" name="commute">
+                    <label for="train">Train</label><br><br>
+                    <label for="feedback">Feedback</label>
+                    <textarea name="feedback" id="feedback">Provide your feedback:</textarea><br><br>
+                    <a href="index.html"><input type="button" value="Submit"></a>
+                </form>
+            </section>
+            <aside>
+            </aside>
+        </main>
+        <footer>
+            <p style="color:yellowgreen;">Author: Sepideh</p>
+            <p class="para">Copyright is reserved &copy; 2024 </p>
+            <p><a href="#top">Back to Top</a></p>
+        </footer>
+    </body>
+</html>
