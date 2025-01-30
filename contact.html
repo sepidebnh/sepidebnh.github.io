@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Page</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Sepideh">
+        <meta name="keywords" content="HTML, CSS, Web Design, About page">
+        <meta name="description" content="About page of Little Store Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            
+            <img src="images/logo.jpg" alt="website logo" width="150" height="150">
+            <h1>Welcome to Website</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <form action="process.php" method="get">
+                    <label for="fName">First Name:</label>
+                    <input type="text" id="fName" name="fName" required><br><br>
+                    <label for="lName">Last Name:</label>
+                    <input type="text" id="lName" required><br><br>
+                    <label for="email" style="margin-left: 31px;">Email:</label>
+                    <input type="email" id="email" placeholder="put in email format"><br><br>
+                    <label for="contact">Choose your method of Contact:</label>
+                    <select name="contact" id="contact">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="fax" selected>Fax</option>
+                        <option value="mail">Mail</option>
+                    </select><br><br>
+                    <input type="radio" id="female" name="gender" value="female" checked>
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br><br><br>
+                    <input type="checkbox" name="browser" id="google" value="google">
+                    <label for="google">Google Chrome</label><br>
+                    <input type="checkbox" name="browser" id="mozilla" value="mozilla">
+                    <label for="mozilla">Mozilla Firefox</label><br>
+                    <input type="checkbox" name="browser" id="safari" value="safari">
+                    <label for="safari">Safari</label><br><br><br>
+                    <input type="submit" value="Submit">
+                    <button type="button" value="send">Send</button>
+                </form>
+
+
+            </section>
+             
+        </main>
+        <aside>
+            <ol type="A">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+            <q cite="http://humber.ca">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo sequi corporis maiores impedit placeat architecto quaerat labore! Atque voluptatibus quod nostrum blanditiis assumenda odit voluptatem ratione quibusdam dolor excepturi!</q>
+            <blockquote cite="http://wikiepdai.org">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugit illo impedit asperiores incidunt, perspiciatis aut blanditiis delectus repellendus quidem at dignissimos commodi similique esse veniam repudiandae, ut earum. Nam.</blockquote>
+            <address>2307 Finch West, ON</address>
+        </aside>
+        <footer>
+            <p>Author: Sepideh</p>
+            <p><a href="#top">Back to Top</a></p>
+            <p>&copy;Copyright reserved 2025</p>
+        </footer>
+    </body>
+</html>
+
