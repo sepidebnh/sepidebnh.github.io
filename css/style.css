@@ -1,0 +1,301 @@
+* {
+
+    box-sizing: border-box;
+}
+
+/* html style */
+html {
+
+    background-color: lightblue;
+}
+
+/* body style */
+body {
+
+    width: 900px;
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px 10px black;
+    margin: 0px auto;
+   
+}
+
+header {
+
+    border-bottom: 2px solid blue;
+    height: 120px;
+    background-image: linear-gradient(45deg, red, pink, yellow, blue);
+    position: sticky;
+    top: 0px;
+}
+
+header img {
+
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin: 15px;
+}
+
+/* nav bar style */
+nav ul {
+
+    list-style-type: none;
+    background-color: lightgrey;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+
+    float: left;
+}
+
+nav ul li a, .dropbtn {
+
+    display: inline-block;
+    color: black;
+    padding: 15px 18px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+
+    background-color: #d56d8f;
+}
+
+.dropdown-content {
+    
+    display: none;
+    min-width: 140px;
+    background-color: #86e0e0;
+    position: absolute;
+    box-shadow: 2px 2px 2px blue;
+    z-index: 1;
+}
+
+li.dropdown {
+
+    display: inline-block;
+}
+
+.dropdown-content a {
+
+    display: block;
+    padding: 13px 15px;
+    color: blue;
+    text-decoration: none;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+
+    background-color: lightgray;
+}
+
+.dropdown:hover .dropdown-content {
+
+    display: block;
+}
+
+nav ul li a:link {
+
+    color: blue;
+}
+
+nav ul li a:visited {
+
+    color: rgb(113, 55, 55);
+}
+
+.active {
+
+    background-color:aquamarine;
+}
+
+nav ul li a:hover {
+
+    background-color: lightpink;
+}
+
+nav ul li a:active {
+
+    font-size: 19px;
+    text-decoration: underline;
+}
+/* heading style */
+h1, h3, h5 {
+
+    text-shadow: 10px 10px 7px #c4ecc4;
+    color: #5a7d63;
+    font-style: italic;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+main img {
+
+    filter: drop-shadow(15px 10px 19px red);
+    margin: 20px auto;
+    display: block;
+}
+
+main {
+
+    padding: 3px;
+}
+
+main p {
+   color: black;
+   font-size: 16px;
+   font-family:Arial, Helvetica, sans-serif;
+
+}
+
+h2::first-letter {
+    font-size: 40px;
+    color: red;
+}
+p::first-line  {
+
+    color: blue;
+    font-style: italic;
+}
+/* iframe style */
+iframe {
+
+    width: 400px;
+    height: 300px;
+    box-shadow: 3px 3px 5px 4px yellowgreen;
+}
+
+#first {
+
+    width: 400px;
+    height: 300px;
+
+}
+
+.intro {
+
+    border: 2px solid black;
+}
+
+/* form style */
+
+form {
+
+    margin: 10px auto;
+    border: 1px solid black;
+    width: 60%;
+    padding: 14px;
+}
+
+input[type="text"] {
+
+    background-color: rgb(165, 184, 200);
+    width: 140px;
+    border: 2px solid blue;
+    
+}
+
+input[type="email"]{
+
+    width: 140px;
+    border: 2px solid blue;
+    background-color: rgb(165, 184, 200);
+}
+
+
+input[type="submit"]{
+
+    background-color: lightgoldenrodyellow;
+    color: darkcyan;
+    width: 90px;
+    font-size: 19px;
+    margin: 10px auto;
+    display: block;
+}
+/* table style */
+
+table {
+
+    border: 2px solid black;
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;  
+}
+
+th, td {
+
+    border: 2px solid black;
+}
+
+tr:hover {
+
+    background-color: lightsalmon;
+}
+
+tbody td:last-child {
+
+    color: blueviolet;
+}
+
+tbody td:nth-of-type(2){
+
+  font-size: 14px;
+}
+
+caption{
+    caption-side: top;
+    color: blueviolet;
+    font-weight: 800;
+}
+
+/* position style */
+
+#pos {
+
+    background-color: lightcoral;
+    width: 700px;
+    height: 300px;
+    border: 2px solid blue;
+    position: relative;
+    left: 120px;
+
+}
+
+#child {
+
+    background-color: lightgrey;
+    width:300px;
+    height: 150px;
+    border: 2px solid #d56d8f;
+    position: absolute;
+    left: 200px;
+    top: 70px;
+}
+
+/* footer style */
+footer {
+
+    height: 120px;
+    border-top: 2px solid blue;
+    background-image: linear-gradient(45deg, blue, yellow, pink, red);
+    position: relative;
+    top: 120px;
+    width: 900px;
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+}
+
