@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Page</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Sepideh">
+        <meta name="keywords" content="HTML, CSS, Web Design, About Page">
+        <meta name="description" content="About Page of my little Store Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="shortcut icon" href="images/favicon.icon" type="image/x-icon">
+        <style>
+            body {
+
+                background-color: lightblue;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header id="top">
+            <img src="images/logo.jpg" alt="website logo" width="90" height="90">
+            <h1>Welcome to my Little Store Website</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">About</a></li>
+                <li class="dropdown"><a href="news.html" class="dropbtn">News</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h3>About the Little Store Website</h3>
+            <div>
+                <table id="first">
+                    <caption>Weeklt courses</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th colspan="2">Course</th>
+                            <!-- <th>Day</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                John Doe
+                            </td>
+                            <td>Web Programming</td>
+                            <td>Wednesday</td>
+                        </tr>
+                        <tr>
+                            <td>Lisa Harper</td>
+                            <td rowspan="2">Database</td>
+                            <td>Thursday</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Doe</td>
+                            <!-- <td>Operating System</td> -->
+                            <td>Monday</td>
+                        </tr>
+                    </tbody>   
+                   <tfoot>
+                    <tr>
+                        <td class="intro">Names</td>
+                        <td class="intro">Number of Courses</td>
+                        <td>Weekdays</td>
+                    </tr>
+                   </tfoot>
+                    
+                </table>
+            </div>
+            <div id="pos">
+                <section id="child">
+
+                </section>
+            </div>  
+        </main>
+        <aside>
+
+
+
+        </aside>
+        <footer>
+            <p>Author:Sepideh</p>
+            <p><a href="#top">Back to Top</a></p>
+            <p>Copyright reserved&nbsp;&copy; 2025</p>
+        </footer>
+    </body>
+</html>

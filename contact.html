@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Sepideh">
+        <meta name="keywords" content="HTML, CSS, Web Design">
+        <meta name="description" content="Homepage of my little Store Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="shortcut icon" href="images/favicon.icon" type="image/x-icon">
+    </head>
+    <body>
+        <header id="top">
+            <img src="images/logo.jpg" alt="website logo">
+            <h1>Welcome to my Little Store Website</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown"><a href="news.html" class="dropbtn">News</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    </li>
+                <li><a href="#" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form action="proces.php" method="get">
+                <fieldset>
+                    <legend>Personal Info:</legend>
+                    <label for="fName">First Name:</label>
+                        <input type="text" id="fName" required placeholder="First Name"><br><br>
+                        <label for="lName">Last Name:</label>
+                        <input type="text" id="lName" required name="lName"><br><br>
+                        <label for="email" style="margin-left:48px;">Email:</label>
+                        <input type="email" id="email" required placeholder="please follow the format for your email"><br><br>
+                    </fieldset>
+                <label for="browser">Browser:</label>
+                <select name="browser" id="browser" size="2" multiple>
+                    <optgroup label="windows">
+                    <option value="Mozilla Firefox" selected>Mozilla Firefox</option>
+                    <option value="Internet Explorer">Internet Explorer</option>
+                    </optgroup>
+                    <optgroup label="Mac">
+                    <option value="Safari">Safari</option>
+                    <option value="Google Chrome">Google Chrome</option>
+                </optgroup>
+                </select>
+                <input type="radio" value="female" name="gender" id="female">
+                <label for="female">Female</label><br>
+                <input type="radio" value="male" name="gender" id="male">
+                <label for="male">Male</label><br>
+                <input type="radio" value="other" name="gender" id="other">
+                <label for="other">Other</label><br>
+                <p>Choose your Browser:</p>
+                <input type="checkbox" name="browser" id="google" value="google">
+                <label for="google">Google Chrome</label><br>
+                <input type="checkbox" name="browser" id="mozilla" value="mozilla">
+                <label for="mozilla">Mozilla Firefox</label><br>
+                <input type="checkbox" name="browser" id="safari" value="safari">
+                <label for="safari">Safari</label><br>
+                <input type="checkbox" name="browser" id="edge" value="edge">
+                <label for="edge">Microsoft Edge</label><br><br><br>
+                <label for="comment">Feedback:</label><br>
+                <textarea name="comment" id="comment">Provide your feedback</textarea><br><br>
+                <input list="commute" name="commute">
+                <datalist id="commute">
+                    <option value="Car">
+                    <option value="Train">
+                    <option value="Boat">
+                    <option value="Bike">
+                </datalist>
+                <input type="submit" value="Submit">
+                <button type="button" onclick="alert('hello there')">Send</button>
+            </form> 
+        </main>
+        <aside>
+        </aside>
+        <footer>
+            <p>Author:Sepideh</p>
+            <p><a href="#top">Back to Top</a></p>
+            <p>Copyright reserved&nbsp;&copy;2025</p>
+        </footer>
+    </body>
+</html>
