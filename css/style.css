@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-/* html style */
+/* html root style */
 html {
    /* background-color: yellow; */
    background-image: url("/images/background.jpg");
