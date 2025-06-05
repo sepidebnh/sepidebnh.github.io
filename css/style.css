@@ -3,6 +3,13 @@
     src: url("/fonts/Awesome.ttf") format("truetype");
 }
 
+/* all elements */
+
+* {
+
+    box-sizing: border-box;
+}
+
 /* html style */
 html {
    /* background-color: yellow; */
