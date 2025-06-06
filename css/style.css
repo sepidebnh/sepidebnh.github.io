@@ -222,13 +222,12 @@ div#child {
 
 footer {
 
-    background-color: lightcyan;
+    background-color: lightred;
     height: 170px;
     border-top: 2px solid black;
     background-image: linear-gradient(45deg, black, red, pink, white);
-    position: relative;
+    position: fixed;
     top: 80px;
-     width: 1200px; 
 }
 
 footer p{
