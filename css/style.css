@@ -36,7 +36,10 @@ header {
 }
 
 /* website logo style */
+<<<<<<< HEAD
 
+=======
+>>>>>>> f98147b (comment)
 header img {
 
     width: 90px;
@@ -47,7 +50,10 @@ header img {
 }
 
 /* header headings */
+<<<<<<< HEAD
 
+=======
+>>>>>>> f98147b (comment)
 header h1 {
 
     color: darkcyan;
@@ -70,7 +76,10 @@ header h2 {
 }
 
 /* main style */
+<<<<<<< HEAD
 
+=======
+>>>>>>> f98147b (comment)
 main section img#feature {
 
     width: 400px;
@@ -199,8 +208,11 @@ div#first {
     position: relative; 
     left: 120px;
     top: 30px; 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> f98147b (comment)
 }
 
 div#child {
@@ -212,6 +224,7 @@ div#child {
     top: 50px;
     left: 100px;
 }
+<<<<<<< HEAD
 /* transform and transition style */
 
 section#transform {
@@ -224,10 +237,27 @@ section#transform {
     transform: rotate(30deg);
     transform: scale(0.5, 0.5);
     transform: skew(45deg, 30deg);
+=======
+
+/* transform and transition style */
+section#transform {
+
+  background-color: antiquewhite;
+  width: 400px;
+  height: 400px;
+  border: 2px solid blue;
+  transform: translate(130px, 40px);
+  transform: rotate(-30deg);
+  transform: scale(0.5, 0.5);
+  transform: skew(25deg, 30deg);
+
+
+>>>>>>> f98147b (comment)
 }
 
 div.transition {
 
+<<<<<<< HEAD
     background-color: #ff7700;
     width: 300px;
     height: 300px;
@@ -235,6 +265,16 @@ div.transition {
     transition: all 3s;
     transition-delay: 1s;
     transition-timing-function: ease-out;
+=======
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    transition: all 2s;
+    transition-delay: 1s;
+    transition-timing-function: linear;
+
+>>>>>>> f98147b (comment)
 
 }
 
@@ -242,6 +282,7 @@ div.transition:hover {
 
     width: 500px;
     height: 500px;
+<<<<<<< HEAD
     transform: rotate(45deg);
 }
 
@@ -262,37 +303,80 @@ section#animated {
     position: relative;
     left: 30px;
     top: 20px;
+=======
+    transform: rotate(30deg);
+}
+/* animation style */
+section#animated {
+
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid blue;
+    animation-name: test;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    position: relative;
+    left: 20px;
+    top: 30px;
+
+>>>>>>> f98147b (comment)
 }
 
 @keyframes test {
 
+<<<<<<< HEAD
 
     0% {
         background-color: lightsalmon;
         left: 30px;
          top: 20px;
+=======
+    0% {
+        background-color: #2be23d;
+        left: 20px;
+        top: 30px;
+>>>>>>> f98147b (comment)
 
 
     }
 
     25% {
+<<<<<<< HEAD
          background-color: #7accff;
         left: 230px;
         top: 20px;
+=======
+        background-color: #e22bae;
+        left: 320px;
+        top: 30px;
+>>>>>>> f98147b (comment)
 
 
     }
 
     50% {
+<<<<<<< HEAD
         background-color: #fb7aff;
         left: 230px;
         top: 320px;
+=======
+
+        background-color: #2b56e2;
+        left: 320px;
+        top: 230px;
+>>>>>>> f98147b (comment)
 
 
     }
 
     75% {
 
+<<<<<<< HEAD
         background-color: #ff7a90;
         left: 30px;
         top: 320px;
@@ -314,6 +398,24 @@ section#animated {
 
 
 
+=======
+        background-color: #e2c02b;
+        left: 20px;
+        top: 230px;
+
+
+    }
+    100% {
+
+        background-color: #2babe2;
+        left: 20px;
+        top: 30px;
+
+
+    }
+}
+
+>>>>>>> f98147b (comment)
 /* footer style */
 footer {
 
@@ -322,7 +424,11 @@ footer {
     border-top: 2px solid black;
     background-image: linear-gradient(45deg, black, red, pink, white);
     position: relative;
+<<<<<<< HEAD
     top: 180px;
+=======
+    top: 280px;
+>>>>>>> f98147b (comment)
     /* width: 1200px; */
 }
 
