@@ -1,4 +1,4 @@
- <h1> Project Title</h1>
+#Project Title
 
 A short description of what this project does and who it’s for.
 
