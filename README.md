@@ -2,7 +2,7 @@
 
 A short description of what this project does and who it’s for.
 
-# Installation
+## Installation
 
 Steps to install and run the project.
 
@@ -10,6 +10,6 @@ Steps to install and run the project.
 
 Examples of how to use the project. 
 
-# Authors
+### Authors
 
 - Your Names
