@@ -1,0 +1,145 @@
+/* html style */
+
+html {
+
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+/* body style */
+
+body {
+
+    background-color: white;
+    border: 5px double black;
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* header style */
+header {
+
+    border-bottom: 2px solid black;
+    height: 100px;
+    
+}
+
+/* website logo style */
+header img {
+
+    float: left;
+    border-radius: 50%;
+    padding: 2px;
+    margin-left: 20px;
+}
+
+header h1 {
+
+    margin-left: 120px;
+    padding: 15px;
+}
+
+/* main nav bar style */
+
+nav ul {
+
+    list-style-type: none;
+    background-color: lightblue;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 40px;
+    margin-bottom: 30px;
+}
+
+nav ul li {
+
+   float: left;
+}
+nav ul li a {
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover:not(.active){
+
+    background-color: lightgrey;
+}
+
+ul li a.active {
+
+    background-color: lightpink;
+}
+
+
+/* main style */
+main {
+
+    padding: 2px;
+}
+
+/* iframe style */
+iframe {
+
+    margin: 0px auto;
+    display: block;
+}
+
+ul#first {
+
+    background-color: lightcyan;
+    padding: 10px;
+    list-style-position: inside;
+}
+
+ul#first li {
+
+    background-color: azure;
+    color: blue;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* table style */
+
+table {
+
+    font-family: 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin: 10px auto;
+}
+
+table caption {
+
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+ th, td {
+    border: 2px solid black;
+    padding: 8px;
+}
+
+td {
+
+    text-align: center;
+}
+
+
+
+/* footer style */
+footer {
+
+    height: 110px;
+    border-top: 2px solid black;
+    text-align: center;
+}
+
