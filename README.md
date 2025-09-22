@@ -6,7 +6,7 @@ A short description of what this project does and who it’s for.
 
 Steps to install and run the project.
 
-# Usage
+## Usage
 
 Examples of how to use the project. 
 
