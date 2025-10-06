@@ -29,7 +29,7 @@ header img {
     height: 80px;
     float: left;
     border-radius: 50%;
-    margin: 10px;
+    margin: 15px;
 }
 
 /* title inside header style */
@@ -61,7 +61,7 @@ nav ul li {
 nav ul li a {
 
     display:block;
-    padding: 12px 20px;
+    padding: 14px 20px;
     color: black;
     font-size: 23px;
     text-decoration: none;
