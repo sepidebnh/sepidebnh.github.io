@@ -1,0 +1,396 @@
+@font-face {
+    font-family: myFont;
+    src: url("../fonts/GreatVibes-Regular.ttf") format("truetype");
+}
+
+/* html style */
+html {
+
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* body style */
+body {
+
+    width: 900px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 0px auto;
+
+}
+
+/* header style */
+header {
+
+    height: 120px;
+    border-bottom: 2px solid black;
+    background-image: linear-gradient(45deg, yellow, pink, red, blue);
+}
+
+/* website logo */
+
+header img {
+    width: 80px;
+    height: 90px;
+    float: left;
+    border-radius: 50%;
+    margin: 5px;
+
+}
+
+/* title inside header style */
+
+header h1 {
+
+    color: blueviolet;
+    margin-left: 120px;
+    text-shadow: 2px 4px 7px yellowgreen;
+    padding: 20px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-family: myFont;
+     
+  
+
+}
+
+/* main nav bar */
+nav ul {
+
+    background-color: aquamarine;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    overflow: hidden;
+
+}
+
+nav ul li {
+
+   float: left;
+    /* margin: 15px; */
+}
+
+nav ul li a {
+
+    display: block;
+    padding: 12px 16px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a:not(.active):hover {
+
+    background-color: bisque;
+}
+
+nav ul li a:active {
+
+    text-decoration: underline;
+}
+
+nav ul li a:visited {
+
+    color: purple;
+}
+
+nav ul li a.active {
+
+    background-color: aqua;
+}
+
+h1::first-letter {
+
+    font-size: 45px;
+}
+
+p::first-line {
+
+    color: darkmagenta;
+}
+
+img::after {
+
+    background-color: yellow;
+    /* content: "Remember this"; */
+}
+
+/* sidebar style */
+aside {
+
+    border: 2px solid black;
+}
+
+/* table style */
+table {
+    width: 70%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    box-shadow: 4px 6px 10px 4px red;
+
+
+}
+table, th, td {
+
+    border: 2px solid black;
+}
+
+table caption {
+
+    font-weight: 600;
+    font-family:'Times New Roman', Times, serif;
+    color: blue;
+    font-size: 25px;
+
+}
+
+table tr:hover {
+    background-color: lightgray;
+}
+
+table tr td:first-child {
+
+    color: red;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+table tr td:last-child {
+
+    border: 2px solid blue;
+    font-size: 34px;
+}
+
+table tr td:nth-child(3){
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ div:nth-of-type(2) {
+
+    border: 2px solid red;
+    width: 700px;
+    height: 300px;
+    background-color: azure;
+}
+
+p#first {
+
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* main style */
+
+main {
+    padding: 6px;
+}
+
+main article img {
+
+    width: 500px;
+    height: 300px;
+    opacity: 0.7;
+    margin: 10px auto;
+    display: block;
+    filter: drop-shadow(13px 15px 10px yellowgreen);
+}
+
+/* ifarme style */
+
+main div iframe {
+
+    margin: 20px auto;
+    display: block;
+    width: 500px;
+    height: 300px;
+}
+
+main ul#list {
+
+    background-color: blanchedalmond;
+    list-style-type: square;
+    padding: 20px;
+    list-style-position: inside;
+}
+
+main ul#list li {
+
+    background-color: azure;
+    color: darkgreen;
+    padding: 5px;
+    margin: 6px;
+}
+
+section#para {
+
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    border: 2px solid blue;
+    transform: translate(-20px, -40px);
+    transform: rotate(-20deg);
+    transform: scale(2,0.5);
+    transform: skew(20deg, 30deg);
+}
+
+section#move {
+
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border: 2px solid black;
+    transition: width 3s, height 2s, transform 4s;
+    /* transition-duration: 4s; */
+    transition-delay: 1s;
+    transition-timing-function: ease-out;
+}
+
+section#move:hover {
+
+    /* width: 400px; */
+    /* height: 500px; */
+    transform: rotateY(360deg);
+}
+section#animated {
+
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border: 2px solid blue;
+    position: relative;
+    animation-name: test;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes test {
+
+    0% {
+
+        background-color: blueviolet;
+        left: 30px;
+        top: 40px;
+
+    }
+
+    25% {
+
+        background-color: coral;
+        left: 230px;
+        top: 40px;
+    }
+
+    50% {
+
+        background-color: red;
+        left: 230px;
+        top: 340px;
+    }
+
+    75% {
+        background-color: blue;
+        left: 30px;
+        top: 340px;
+
+    }
+
+    100% {
+
+        background-color: pink;
+        left: 30px;
+        top: 40px;
+    }
+   
+}
+
+/* flexbox style */
+
+section#flex {
+
+    background-color: aquamarine;
+    width: 900px;
+    height: 800px;
+    border: 2px solid blue;
+    display: flex;
+    margin: 350px 0px;
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+
+section#flex div.item {
+
+    background-color: azure;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    text-align: center;
+    
+}
+section#flex div.item-1 {
+
+    background-color: red;
+    order: 5;
+    flex-basis: 320px;
+}
+
+section#flex div.item-2 {
+
+    background-color: yellow;
+    order: 4;
+    flex-grow: 2;
+}
+
+
+section#flex div.item-3 {
+
+    background-color: pink;
+    order: 1;
+}
+
+
+section#flex div.item-4 {
+
+    background-color: purple;
+    order: 2;
+    flex: 2 3 100px;
+}
+
+
+
+
+/* footer style */
+
+footer {
+
+    height: 120px;
+    border-top: 2px solid black;
+    text-align: center;
+    background-image: linear-gradient(45deg, blue, red, pink, yellow);
+}
+
+/* CSS media queries */
+@media screen and (max-width: 800px){
+
+    body {
+
+        background-color: aquamarine;
+    }
+}
