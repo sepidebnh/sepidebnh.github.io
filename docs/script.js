@@ -62,6 +62,10 @@ function frame(){
 }
 
 
+myFunction = (a, b) => { return a * b}; 
+
+
+
 
 
 
