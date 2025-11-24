@@ -61,16 +61,7 @@ function frame(){
 }     
 }
 
-// create a function 
-function myFunction(arg1, arg2){
 
-    this.firstName = arg1;
-    this.lastName = arg2;
-}
-
-const myObj = new myFunction("John", "Doe");
-
-document.getElementById("test2").innerHTML = myObj.firstName;
 
 
 
