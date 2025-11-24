@@ -1,5 +1,6 @@
 @font-face {
     font-family: myFont;
+<<<<<<< HEAD
     src: url("../fonts/GreatVibes-Regular.ttf") format("truetype");
 }
 
@@ -10,16 +11,34 @@ html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+=======
+    src: url("../fonts/BlackThick.otf") format("opentype");
+}
+/* html style */
+html {
+
+   background-image: url("../images/background.jpg");
+   background-position: center;
+   background-size: cover;
+>>>>>>> 1c69d9b (nov24-update)
 }
 
 /* body style */
 body {
 
+<<<<<<< HEAD
     width: 900px;
     background-color: white;
     border: 2px solid black;
     margin: 0px auto;
 
+=======
+    width: 850px;
+    border: 2px solid black;
+    background-color: white;
+    margin: 0px auto;
+    box-shadow: 4px 5px 10px 4px black;
+>>>>>>> 1c69d9b (nov24-update)
 }
 
 /* header style */
@@ -27,6 +46,7 @@ header {
 
     height: 120px;
     border-bottom: 2px solid black;
+<<<<<<< HEAD
     background-image: linear-gradient(45deg, yellow, pink, red, blue);
 }
 
@@ -39,12 +59,30 @@ header img {
     border-radius: 50%;
     margin: 5px;
 
+=======
+    position: sticky;
+    top: 1px;
+    background-color: burlywood;
+    background-image: linear-gradient(45deg, black, blue, red, pink, yellow, white);
+
+}
+
+/* website logo style */
+header img {
+
+    width: 80px;
+    height: 80px;
+    float: left;
+    border-radius: 50%;
+    margin: 15px;
+>>>>>>> 1c69d9b (nov24-update)
 }
 
 /* title inside header style */
 
 header h1 {
 
+<<<<<<< HEAD
     color: blueviolet;
     margin-left: 120px;
     text-shadow: 2px 4px 7px yellowgreen;
@@ -66,16 +104,39 @@ nav ul {
     list-style-type: none;
     overflow: hidden;
 
+=======
+    color: blue;
+    margin-left: 120px;
+    padding: 20px;
+    text-shadow: 4px 5px 6px red;
+    font-family: myFont;
+
+}
+
+/* main nav bar style */
+nav ul {
+
+    background-color: lightcyan;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+>>>>>>> 1c69d9b (nov24-update)
 }
 
 nav ul li {
 
+<<<<<<< HEAD
    float: left;
     /* margin: 15px; */
+=======
+    float: left;
+>>>>>>> 1c69d9b (nov24-update)
 }
 
 nav ul li a {
 
+<<<<<<< HEAD
     display: block;
     padding: 12px 16px;
     color: black;
@@ -83,10 +144,19 @@ nav ul li a {
     text-decoration: none;
     font-size: 23px;
     font-family: Arial, Helvetica, sans-serif;
+=======
+    display:block;
+    padding: 14px 20px;
+    color: black;
+    font-size: 23px;
+    text-decoration: none;
+    text-align: center;
+>>>>>>> 1c69d9b (nov24-update)
 }
 
 nav ul li a:not(.active):hover {
 
+<<<<<<< HEAD
     background-color: bisque;
 }
 
@@ -98,10 +168,14 @@ nav ul li a:active {
 nav ul li a:visited {
 
     color: purple;
+=======
+    background-color: blueviolet;
+>>>>>>> 1c69d9b (nov24-update)
 }
 
 nav ul li a.active {
 
+<<<<<<< HEAD
     background-color: aqua;
 }
 
@@ -136,11 +210,46 @@ table {
 
 
 }
+=======
+     background-color: bisque;
+}
+
+/* main style */
+main {
+
+    padding: 4px;
+}
+
+main article img {
+    width: 500px;
+    height: 300px;
+    margin: 10px auto;
+    display: block;
+}
+
+/* table style */
+
+table {
+
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table caption {
+
+    color: red;
+    font-size: 23px;
+    font-weight: 900;
+}
+
+>>>>>>> 1c69d9b (nov24-update)
 table, th, td {
 
     border: 2px solid black;
 }
 
+<<<<<<< HEAD
 table caption {
 
     font-weight: 600;
@@ -378,11 +487,163 @@ section#flex div.item-4 {
 
 /* footer style */
 
+=======
+table tr:hover {
+
+    background-color: azure;
+}
+
+table tbody tr td:last-child {
+
+    background-color: azure;
+}
+
+table thead tr th:last-child {
+
+    color: red;
+}
+
+table tbody tr td:nth-child(2) {
+
+    font-size: 25px;
+}
+
+main section:nth-of-type(2) {
+
+    border: 2px solid blue;
+    background-color: azure;
+}
+
+/* flexbox style */
+section#flex {
+
+    width: 850px;
+    height: 600px;
+    background-color: azure;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: column wrap; */
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-evenly;
+    margin: 50px;
+}
+
+.item {
+
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.item2 {
+
+    background-color: blueviolet;
+    order: 10;
+    flex-basis: 120px;
+    /* flex-grow: 2; */
+    align-self: center;
+}
+
+.item3 {
+
+    background-color: blanchedalmond;
+    order: 4;
+    flex-shrink: 2;
+    flex: 0 2;
+}
+
+/* position style */
+
+div#position {
+    width: 600px;
+    height: 400px;
+    background-color: lightgreen;
+    border: 2px solind blue;
+    position: relative;
+    bottom: 20px;
+    right: 150px;
+
+}
+
+div#child {
+
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    position: absolute;
+    top: 105px;
+    right: 30px;
+}
+
+
+h1::first-letter {
+
+  font-size: 45px;
+  color: red;
+}
+/* 
+p::first-line {
+
+    color: purple;
+} */
+
+/* iframe style  */
+iframe {
+
+    margin: 10px auto;
+    display: block;
+    box-shadow: 4px 5px 10px red;
+}
+
+/* multiple column style */
+section#multiple {
+
+    margin: 50px 0px;
+    background-color: azure;
+    border: 1px solid blue;
+    column-count: 3;
+    column-gap: 10px;
+    column-rule: 3px solid red;
+    padding: 7px;
+}
+
+section#multiple h2 {
+
+    column-span: all;
+    text-align: center;
+}
+
+section#transform{
+
+    background-color: azure;
+    width: 200px;
+    height:  200px;
+    border: 2px solid purple;
+    margin: 60px 0px;
+
+}
+
+section#animated {
+
+    background-color: blue;
+    width: 120px;
+    height: 120px;
+
+}
+
+/* footer style */
+>>>>>>> 1c69d9b (nov24-update)
 footer {
 
     height: 120px;
     border-top: 2px solid black;
     text-align: center;
+<<<<<<< HEAD
     background-image: linear-gradient(45deg, blue, red, pink, yellow);
 }
 
@@ -392,5 +653,46 @@ footer {
     body {
 
         background-color: aquamarine;
+=======
+    position: relative;
+    top: 150px;
+    width: 850px;
+    /* background-color: lightpink; */
+    background-image: linear-gradient(45deg, white, yellow, pink, red, blue, black);
+}
+
+/* media queries for pages */
+
+@media only screen and (max-width: 800px){
+
+    html {
+
+        background-image: none;
+    }
+
+    body {
+
+        background-color: aqua;
+        box-shadow: none;
+        
+    }
+
+    p {
+
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (min-width: 567px) {
+
+    html {
+
+        background-image: url(/images/sunset.jpg);
+    }
+
+    body p, section#multiple {
+
+        font-size: 1.7em;
+>>>>>>> 1c69d9b (nov24-update)
     }
 }
