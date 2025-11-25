@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html>
     <head>
         <title>About Page</title>
@@ -18,7 +17,7 @@
         <header id="top">
             <img src="images/logo.jpg" alt="website logo">
              <h1>Welcome to my Little Store Website</h1>
-=======
+
 <html lang="en">
     <head>
         <title>About Page</title>
@@ -48,20 +47,81 @@
             }
         </style>
        <script src="script.js" defer></script>
+
+
+        <style>
+
+            .important {
+
+                border: 2px solid blue;
+                color: green;
+                font-size: 45px;
+                text-decoration: underline;
+                font-weight: 40;
+            }
+
+        </style>
+        <script src="jquery.js"></script>
+        <script>
+
+            $(document).ready(function(){
+
+                $("button#first").click(function(){
+                    $("p").toggle(2000);
+    
+                });
+
+                $("p.intro").mouseover(function(){
+                        $(this).hide(10000);
+
+                    });
+
+                    $("div#para").mouseenter(function(){
+                        $(this).fadeOut(2000);
+
+                    });
+
+                      $("div#para2").mouseenter(function(){
+                        
+                         $(this).css("background-image", 'url("images/sunset.jpg")');
+                         $(this).css("background-size", 'cover');
+
+                    });
+
+                     $("p#test2").dblclick(function(){
+                        $(this).css("background-color", "yellow");
+
+                     });
+
+                     $("div").hover(function(){
+                        $(this).find("p").toggleClass("important");
+
+                     }, 
+                    
+                    function(){
+                        $(this).find("p").toggleClass("important");
+
+                    });
+            });
+        </script>
+
     </head>
     <body>
         <header id="top">
             <img src="images/logo.jpg" alt="website logo" withd="90" height="90">
             <h1>Welcome to my Little Store Website</h1>
->>>>>>> 1c69d9b (nov24-update)
+
         </header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#" class="active">About</a></li>
-<<<<<<< HEAD
+
                 <li><a href="#">Contact</a></li>
-=======
+
+                <li><a href="#">Contact</a></li>
+
+
                 <li class="dropndown"><a href="news.html" class="dropbtn">News</a>
                 <div class="dropdown-content">
                     <a href="#">Link 1</a>
@@ -70,12 +130,14 @@
                 </div>
             </li>
                 <li><a href="contact.html">Contact</a></li>
->>>>>>> 1c69d9b (nov24-update)
             </ul>
         </nav>
         <aside>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eaque voluptate non sunt eveniet deleniti rem repellat, nesciunt necessitatibus? Omnis aperiam corrupti perferendis provident assumenda magnam, obcaecati dolores. Aspernatur, nihil?</p>
         </aside>
+
+         <button type="button" id="first">Click Me!</button>
+
         <main>
             <section>
                 <table>
@@ -91,14 +153,14 @@
                         <tr>
                             <td>John Doe</td>
                             <td>Web Programming</td>
-<<<<<<< HEAD
+
                             <td>56</td>
                         </tr>
                         <tr>
                             <td>Lisa Harper</td>
                             <td>Database Design</td>
                             <td>78</td>
-=======
+
                             <td>45</td>
                         </tr>
                         <tr>
@@ -106,33 +168,36 @@
                             <td colspan="2">Database Design</td>
                             <td>67
                             </td>
->>>>>>> 1c69d9b (nov24-update)
+
                         </tr>
                         <tr>
                             <td>Lui Kay</td>
                             <td>Operating System</td>
-<<<<<<< HEAD
+
                             <td>52</td>
-=======
+
                             <td>89</td>
->>>>>>> 1c69d9b (nov24-update)
+                            <td>89</td>
+
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
                             <td>Names</td>
-<<<<<<< HEAD
+
                             <td>Course</td>
-=======
+
                             <td>Courses</td>
->>>>>>> 1c69d9b (nov24-update)
+
+                            <td>Courses</td>
+
                             <td>Average</td>
                         </tr>
                     </tfoot>
                 </table>
             </section>
             <div>
-<<<<<<< HEAD
+
                 <iframe src="https://www.youtube.com/embed/hpfVMPCR3xA?si=SKu_Vk7o0Me8T5pj" frameborder="0"></iframe>
             </div>   
             <div>
@@ -175,13 +240,14 @@
         </footer>  
     </body>
 </html>
-=======
+
                 <iframe src="https://www.youtube.com/embed/vM54IDn4RCI?si=CpPVgWcI1X6uMFrr" frameborder="0" width="500" height="300"></iframe>
             </div>
             <div>
                 <video controls autoplay muted width="400" height="300">
                     <source src="media/video.mp4" type="video/mp4">
                 </video>
+
             </div>
             <div>
                 <!-- <audio>
@@ -190,6 +256,18 @@
                 </audio> -->
             </div> 
             <div></div>
+
+                <p class="intro" style="color:red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, sunt? Explicabo accusantium quia nemo hic neque eveniet minima rerum rem inventore blanditiis provident iusto, dignissimos soluta ut consequatur cupiditate sequi!</p>
+            </div>
+            <div>
+                <audio>
+                    <source src="media/track.mp3" type="audio/mpeg">
+                    <source src="media/track.ogg" type="audio/ogg">
+                </audio>
+            </div> 
+            <div></div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam similique alias libero, ea voluptates ipsam quisquam eos minus cumque fugit inventore sapiente placeat quasi nesciunt nulla reprehenderit omnis a. Qui?</p>
+
             <!-- approved -->
              <section id="flex">
                 <div class="item item1">Item 1</div>
@@ -211,6 +289,18 @@
 
              </section>
 
+
+
+             </section>
+
+             </section>
+
+             <div id="para" style="width:300px;height: 300px;background-color: bisque;"></div>
+            <div id="para2" style="width:300px;height: 300px;background-color: #9a6b31;"></div>
+
+            <p id="test2">This is the sentence to test the jQuery.</p>
+
+
              <section id="multiple">
                 <h2>This is the title of this section.</h2>
                 Velit aliquip tempor nulla Lorem laborum dolore deserunt adipisicing sit in ex minim. Id nisi Lorem Lorem incididunt. Ea ad sint est dolor. Nulla incididunt voluptate ipsum cupidatat magna adipisicing consectetur tempor labore excepteur excepteur sint quis. Fugiat proident ex ea magna ea anim id veniam mollit ex proident.
@@ -224,6 +314,7 @@
                 Nulla incididunt elit et culpa commodo. Reprehenderit eu do proident ea et commodo veniam magna. Excepteur voluptate labore dolore amet consequat. Exercitation cillum consectetur et aute anim quis in enim aute. Occaecat dolore ad qui labore labore do adipisicing voluptate id enim exercitation. Dolore excepteur adipisicing sit minim ullamco elit excepteur minim sunt aliquip cupidatat voluptate.
              </section>
 
+
              <section id="container">
                 <div id="animated"></div>
 
@@ -234,12 +325,45 @@
 
             
         </main>
+
+             <section id="transform">
+
+             </section>
+             <section id="animate">
+                
+             </section>
+
+             <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iusto perferendis consequuntur hic inventore? Impedit pariatur eos ut veniam facere recusandae enim at inventore, saepe eveniet, debitis odio, architecto sapiente.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quam ipsa nesciunt debitis. Esse magnam inventore ullam mollitia vero delectus itaque similique iusto, repellendus ipsum labore culpa fuga hic officia.
+
+
+                </p>
+
+
+             </div>
+
+             <div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ex ipsa dolores id veritatis illo dolorum quia sint odit? Veritatis explicabo reiciendis vero recusandae dolorum molestias porro minus modi necessitatibus?</p>
+
+
+             </div>
+
+            
+        </main>
+       
+
         <footer>
             <p>Author: Sepideh</p>
             <a href="#top">Back to Top</a>
             <p>&copy;&nbsp;Copyright reserved 2025</p>
         </footer>
+
        
     </body>
 </html>
->>>>>>> 1c69d9b (nov24-update)
+
+    </body>
+</html>
+
