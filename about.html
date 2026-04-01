@@ -154,6 +154,14 @@
 
             </section>
             <button type="button" onclick="myMove()">Try Me!</button>
+
+            <section>
+                <form action="process.php" method="post" onsubmit="return validateForm()">
+                    <label for="fName">First Name</label>
+                    <input type="text" id="fName" name="fName">
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
         </main>
         <aside>
             <p>This is the sidebar content.</p>

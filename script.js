@@ -74,4 +74,21 @@ function myMove(){
     }
 }
 
+function validateForm() {
+
+    let elem = document.forms["frm1"]["fName"].value;
+
+    if (elem == ""){
+
+        window.alert("Name should be filled out!");
+        return false;
+    }
+
+    else {
+
+        window.alert("Thank you for your Input!");
+        return true;
+    }
+}
+
 
