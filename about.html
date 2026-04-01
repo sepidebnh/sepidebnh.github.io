@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Page</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Sepideh">
+        <meta name="keywords" content="HTML, CSS, Web Design">
+        <meta name="description" content="About page of my Little Store Website">
+        <link rel="icon" href="images/favicon.ico" tyoe="image/x-icon">
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/design.css" type="text/css">
+        <script src="script.js" defer></script> 
+        <style>
+
+
+        section#container {
+
+            width: 500px;
+            height: 500px;
+            border: 1px solid blue;
+            background-color: blue;
+            margin: 40px;
+            position: relative;
+            }
+
+            div#animate {
+
+
+                width: 50px;
+                height: 50px;
+                background-color: yellow;
+                border: 1px solid yellowgreen;
+                position: absolute;
+            }
+
+        </style> 
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.jpg" alt="Website logo">
+            <h1>Welcome to my Little Store Website</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li class="dropdown"><a href="news.html" class="dropbtn">News</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+        <main>
+            <h2>About page of my Little Store Website</h2>
+            <div class="table">
+                <table>
+                <caption>Course Marks</caption>
+                <tr>
+                    <th>Name</th>
+                    <th colspan="2">Course</th>
+                    <!-- <th>Grade</th> -->
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Web Programming</td>
+                    <td>56</td>
+                </tr>
+                <tr>
+                    <td>Sarah Harper</td>
+                    <td rowspan="2">Operating System</td>
+                    <td>78</td>
+                </tr>
+                <tr>
+                    <td>Jane Lui</td>
+                    <!-- <td>Database Design</td> -->
+                    <td>68</td>
+                </tr>
+                <tr>
+                    <td class="first">Names</td>
+                    <td>Courses</td>
+                    <td>Total</td>
+                </tr>
+            </table>
+            </div>
+            
+
+            <section id="para">
+                <div>This is the first DIV inside this section.</div>
+                <p>This is a sample paragraph inside this section.</p>
+                <img src="images/sunset.jpg" alt="sunset image" width="300" height="300">
+                <div>This is the second DIV inside section.</div>
+                <a href="https://humber.ca" target="_blank">Humber</a>
+                <div>This is the third DIV inside this section.</div>
+            </section>
+            <section id="pos">
+                <div>Child</div>
+
+
+            </section>
+            <p id="test">This is the test paragraph.</p>
+            <section id="flex">
+                <div class="item1">Item 1</div>
+                <div class="item2">Item 2</div>
+                <div class="item3">Item 3</div>
+                <div>Item 4</div>
+                <div>Item 5</div>
+                <div>Item 6</div>
+                <div>Item 7</div>
+                <div>Item 8</div>
+                <div>Item 9</div>
+                <div>Item 10</div>
+                <div>Item 11</div>
+                <div>Item 12</div>
+
+            </section>
+
+            <section id="transform">
+
+
+
+            </section>
+            <section id="animated">
+
+
+            </section>
+            <section id="grid">
+                <div class="item1">Item 1</div>
+                <div class="item2">Item 2</div>
+                <div class="item3">Item 3</div>
+                <div>Item 4</div>
+                <div>Item 5</div>
+                <div>Item 6</div>
+            </section>
+            <section id="grid2">
+                <div class="header">Header</div>
+                <div class="menu">NavMenu</div>
+                <div class="main">Main</div>
+                <div class="aside">Sidebar</div>
+                <div class="footer">Footer</div>
+            </section>
+            <p id="demo1">This is JavaScript test!</p>
+            <button type="button" onclick="myFunction1()">Click Me!</button>
+            <section id="container">
+                <div id="animate"></div>
+
+
+
+
+
+            </section>
+            <button type="button" onclick="myMove()">Try Me!</button>
+        </main>
+        <aside>
+            <p>This is the sidebar content.</p>
+
+        </aside>
+        <footer>
+            <p>Author:Sepideh</p>
+            <p><a href="#top">Back to Top</a></p>
+            <p>&copy;&nbsp;All copyright reserved 2026</p>
+        </footer>
+    </body>
+</html>
